@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google News Search Dashboard</title>
+</head>
+<body>
+    <h1>Google News Search Dashboard</h1>
+    <p>This is to search for Google News and select a few articles according to their dominant topics.</p>
+    <form class="" action="/dash_input" method="GET">
+        <label for="keyword">Search Key Word</label>
+        <input required type="text" id="keyword" name="keyword" placeholder="Ukraine" value="keyword">
+
+        <fieldset>
+            <legend>Search articles between</legend>
+            <div class="dates">
+                <label>
+                    <input type="date" name="start_date" value="start">Start Date
+                </label>
+                <label>
+                    <input type="date" name="end_date" value="end">End Date
+                </label>
+            </div>
+
+            <label for="num_recs">Number of Articles to Read per Topic:</label>
+            <input type="number" id="num_recs" name="n_recs" min="1" max="10" value="3">
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+
+
+    </form>
+</body>
+</html>

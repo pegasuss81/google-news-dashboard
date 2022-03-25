@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google News Search Dashboard</title>
+</head>
+<body>
+    <h1>Google News Search Dashboard</h1>
+    <p>(according to your search key word {{ keyword }})</p>
+    <div class="row">
+        {% for x in results %}
+        <div class="col">
+            <p style=" ">{{ x['Link'] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
